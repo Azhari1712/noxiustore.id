@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NoxStore - Top Up Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>NoxStore</h1>
+    <nav>
+      <a href="#games">Game</a>
+      <a href="#payments">Pembayaran</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="games" class="section">
+    <h2>Game Tersedia</h2>
+    <div class="games">
+      <div class="game-item" data-game="PUBG">
+        <img src="images/pubg.png" alt="PUBG" />
+        <a href="#form">PUBG</a>
+      </div>
+      <div class="game-item" data-game="Mobile Legends">
+        <img src="images/mobile-legends.png" alt="Mobile Legends" />
+        <a href="#form">Mobile Legends</a>
+      </div>
+      <div class="game-item" data-game="Free Fire">
+        <img src="images/freefire.png" alt="Free Fire" />
+        <a href="#form">Free Fire</a>
+      </div>
+      <div class="game-item" data-game="COD Mobile">
+        <img src="images/cod-mobile.png" alt="COD Mobile" />
+        <a href="#form">COD Mobile</a>
+      </div>
+      <div class="game-item" data-game="COC">
+        <img src="images/coc.png" alt="Clash of Clans" />
+        <a href="#form">Clash of Clans</a>
+      </div>
+      <div class="game-item" data-game="Clash Royale">
+        <img src="images/clash-royale.png" alt="Clash Royale" />
+        <a href="#form">Clash Royale</a>
+      </div>
+      <div class="game-item" data-game="Genshin Impact">
+        <img src="images/genshin.png" alt="Genshin Impact" />
+        <a href="#form">Genshin Impact</a>
+      </div>
+      <div class="game-item" data-game="Honkai Impact">
+        <img src="images/honkai.png" alt="Honkai Impact" />
+        <a href="#form">Honkai Impact</a>
+      </div>
+      <div class="game-item" data-game="eFootball">
+        <img src="images/efootball.png" alt="eFootball" />
+        <a href="#form">eFootball</a>
+      </div>
+      <div class="game-item" data-game="FIFA Mobile">
+        <img src="images/fifa.png" alt="FIFA Mobile" />
+        <a href="#form">FIFA Mobile</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="payments" class="section">
+    <h2>Metode Pembayaran</h2>
+    <div class="payments">
+      <div class="payment-item">
+        <img src="images/dana.png" alt="Dana" />
+        Dana
+      </div>
+      <div class="payment-item">
+        <img src="images/ovo.png" alt="OVO" />
+        OVO
+      </div>
+      <div class="payment-item">
+        <img src="images/gopay.png" alt="Gopay" />
+        Gopay
+      </div>
+      <div class="payment-item">
+        <img src="images/shopeepay.png" alt="ShopeePay" />
+        ShopeePay
+      </div>
+      <div class="payment-item">
+        <img src="images/bca.png" alt="Bank BCA" />
+        Bank BCA
+      </div>
+      <div class="payment-item">
+        <img src="images/bri.png" alt="Bank BRI" />
+        Bank BRI
+      </div>
+      <div class="payment-item">
+        <img src="images/mandiri.png" alt="Bank Mandiri" />
+        Bank Mandiri
+      </div>
+      <div class="payment-item">
+        <img src="images/qris.png" alt="QRIS" />
+        QRIS
+      </div>
+    </div>
+  </section>
+
+  <section id="form" class="section">
+    <h2>Form Pemesanan</h2>
+    <form id="orderForm">
+      <input type="text" name="nama" placeholder="Nama Kamu" required />
+      <input type="text" name="id_game" placeholder="ID Game / User ID" required />
+      <select name="game" required>
+        <option value="">Pilih Game</option>
+        <option value="PUBG">PUBG</option>
+        <option value="Mobile Legends">Mobile Legends</option>
+        <option value="Free Fire">Free Fire</option>
+        <option value="COD Mobile">COD Mobile</option>
+        <option value="COC">Clash of Clans</option>
+        <option value="Clash Royale">Clash Royale</option>
+        <option value="Genshin Impact">Genshin Impact</option>
+        <option value="Honkai Impact">Honkai Impact</option>
+        <option value="eFootball">eFootball</option>
+        <option value="FIFA Mobile">FIFA Mobile</option>
+      </select>
+      <input type="number" name="jumlah" placeholder="Jumlah Top Up" required />
+      <select name="pembayaran" required>
+        <option value="">Pilih Pembayaran</option>
+        <option value="Dana">Dana</option>
+        <option value="OVO">OVO</option>
+        <option value="Gopay">Gopay</option>
+        <option value="ShopeePay">ShopeePay</option>
+        <option value="BCA">BCA</option>
+        <option value="BRI">BRI</option>
+        <option value="Mandiri">Mandiri</option>
+        <option value="QRIS">QRIS</option>
+      </select>
+      <button type="submit">Kirim via WhatsApp</button>
+    </form>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Kontak Person</h2>
+    <div class="contact">
+      <p>WhatsApp: <a href="https://wa.me/628997055498" style="color: #00aaff">+62 899-7055-498</a></p>
+      <p>Instagram: <a href="https://instagram.com/noxstore.id" style="color: #00aaff">@noxstore.id</a></p>
+      <p>Telegram: <a href="https://t.me/noxstoreadmin" style="color: #00aaff">@noxstoreadmin</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 NoxStore. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
